@@ -133,3 +133,38 @@ if (custoProduto >= 0 && valorVenda >= 0) {
 } else {
     console.log('Erro, os valores não podem ser negativos');
 }
+
+//11.programa que, dado um salário bruto, calcule o líquido a ser recebido,descontando inss e ir
+let aliquotaINSS;
+let aliquotaIR;
+let salarioBruto = 3000;
+
+if (salarioBruto <= 1556.94) {
+    aliquotaINSS = salarioBruto * 0.08;
+} else if (salarioBruto <= 2594.92) {
+    aliquotaINSS = salarioBruto * 0.09;
+} else if (salarioBruto < 5189.82) {
+    aliquotaINSS = salarioBruto * 0.11;
+} else {
+    aliquotaINSS = 570.88;
+}
+
+const baseSalarial = salarioBruto - aliquotaINSS;
+console.log(baseSalarial)
+
+if (baseSalarial <= 1903.98) {
+    aliquotaIR = 0;
+} else if (baseSalarial <= 2826.65) {
+    aliquotaIR = (baseSalarial * 0.075) - 142.80;
+} else if (baseSalarial <= 3751.05) {
+    aliquotaIR = (baseSalarial * 0.15) - 374.80;
+} else if (baseSalarial <= 4664.68) {
+    aliquotaIR = (baseSalarial * 0.225) - 636.13;
+} else {
+    aliquotaIR = (baseSalarial * 0.275) - 869.36;
+}
+
+console.log('sálario: ' + (baseSalarial - aliquotaIR));
+
+
+
