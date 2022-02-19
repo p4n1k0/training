@@ -109,3 +109,15 @@ if (n1 % 2 === 0 || n2 % 2 === 0 || n3 % 2 === 0) {
     par = true;
 };
 console.log(par);
+
+//9. retorna true se pelo menos uma das tres variaveis for impar usando apnas um if
+const n1 = 3;
+const n2 = 4;
+const n3 = 60;
+
+let impar = false;
+
+if (n1 % 2 !== 0 || n2 % 2 !== 0 || n3 % 2 !== 0) {
+    impar = true;
+};
+console.log(impar);
