@@ -15,3 +15,17 @@ if (a > b && a > c) {
 } else {
     console.log("'c' é maior que 'a' e 'b'");
 }
+
+//4. retornar valor se positivo, ou negativo, ou zero; 
+const valor = 0;
+
+if (valor > 0) {
+    console.log('positive');
+} else if (valor < 0) {
+    console.log('negative');
+} else {
+    console.log('zero');
+}
+
+
+
