@@ -40,11 +40,31 @@ if (currentHour >= 22) {
 let weekDay = 'sábado';
 
 if (weekDay === 'segunda-feira' || weekDay === 'terça-feira' || weekDay === 'quarta-feira' || weekDay === 'quinta-feira' || weekDay === 'sexta-feira'){
-    console.log('Oba,mais um dia de aprendizado na Trybe >:D');
+   // console.log('Oba,mais um dia de aprendizado na Trybe >:D');
 } else if (weekDay === 'sábado' || weekDay === 'domingo') {
-    console.log('FINALMENTE, descanso merecido UwU');
+   // console.log('FINALMENTE, descanso merecido UwU');
 }
 
+//NOT
+console.log((2 + 2) === 4);
+console.log(!(2 + 2) === 4); 
+
+//NOT em strings
+const squirtle = "melhor pokemon inicial"; 
+
+console.log(!squirtle); // false
+
+//NOT em numeros
+console.log(!42); // false 
+
+console.log(!0); // true 
+// O número 0 tem o valor "falsy" no javascript. Logo, seu oposto é true.
+
+//NOT em valores nulos
+console.log(!null); // true
+
+//NOT em valores indefinidos
+console.log(!undefined); // true
 
 
 
