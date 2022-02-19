@@ -46,25 +46,46 @@ if (weekDay === 'segunda-feira' || weekDay === 'terça-feira' || weekDay === 'qu
 }
 
 //NOT
-console.log((2 + 2) === 4);
-console.log(!(2 + 2) === 4); 
+//console.log((2 + 2) === 4);
+//console.log(!(2 + 2) === 4); 
 
 //NOT em strings
 const squirtle = "melhor pokemon inicial"; 
 
-console.log(!squirtle); // false
+//console.log(!squirtle); // false
 
 //NOT em numeros
-console.log(!42); // false 
+//console.log(!42); // false 
 
-console.log(!0); // true 
+//console.log(!0); // true 
 // O número 0 tem o valor "falsy" no javascript. Logo, seu oposto é true.
 
 //NOT em valores nulos
-console.log(!null); // true
+//console.log(!null); // true
 
 //NOT em valores indefinidos
-console.log(!undefined); // true
+//console.log(!undefined); // true
+
+//Swith e Case
+let pessoa = 'falta';
+
+switch (pessoa) {
+    case 'aprovada':
+        console.log('Você foi aprovada(o)');
+        break;
+
+    case 'lista':
+        console.log('Você está na lista de espera');
+        break;
+        
+    case 'reprovada':
+        console.log('Você foi reprovada(o)')
+        break;    
+    
+    default:
+        console.log('não se aplica');    
+}
+
 
 
 
