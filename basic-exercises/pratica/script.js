@@ -121,3 +121,15 @@ if (n1 % 2 !== 0 || n2 % 2 !== 0 || n3 % 2 !== 0) {
     impar = true;
 };
 console.log(impar);
+
+//10.Calcula o lucro a empresa tera ao vender 1000 produtos sobre o imposto de 20% do custo de cada produto
+const custoProduto = -5;
+const valorVenda = 10;
+
+if (custoProduto >= 0 && valorVenda >= 0) {
+    const totalCustoProduto = custoProduto * 1.2; //custo do produto com 20% de imposto
+    const lucro = (valorVenda - totalCustoProduto) * 1000;
+    console.log(lucro);
+} else {
+    console.log('Erro, os valores não podem ser negativos');
+}
