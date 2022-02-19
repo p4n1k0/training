@@ -36,4 +36,6 @@ if (currentHour >= 22) {
 }
 //console.log(message);
 
+let weekDay = 'quarta-feira';
+
 
