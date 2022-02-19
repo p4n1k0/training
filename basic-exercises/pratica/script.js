@@ -98,3 +98,14 @@ if(nota < 0 || nota > 100) {
 }
 
 
+//8.retorna true se pelo menos uma das tres variaveis for par usando apenas um if
+const n1 = 3;
+const n2 = 67;
+const n3 = 80;
+
+let par = false
+
+if (n1 % 2 === 0 || n2 % 2 === 0 || n3 % 2 === 0) {
+    par = true;
+};
+console.log(par);
