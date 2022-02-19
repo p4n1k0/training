@@ -21,3 +21,4 @@ if (nota >= 80) {
 
 //Operadores lógicos
 const currentHour = 15;
+let message = '';
