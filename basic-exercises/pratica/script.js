@@ -45,4 +45,37 @@ if (angulosPositivos) {
     console.log('Erro, ângulo negativo encontrado')
 }
 
+//6.
+const pecaXadrez = 'Bispo';
+
+switch (pecaXadrez.toLowerCase()) {
+    case 'Peão':
+        console.log('Peão -> só anda para frente');
+        break;
+    
+    case 'bispo':
+        console.log('Bispo -> só anda em diagonais');
+        break;
+
+    case 'Torre':
+        console.log('Torre -> se move em linha reta horizontal e verticalmente');
+        break;
+
+    case 'Cavalo':
+        console.log('Cavalo -> movimento em L');
+        break;
+        
+    case 'Rainha':
+        console.log('Rainha -> se move em linha reta - verticalmente, horizontalmente ou diagonalmente');
+        break;
+        
+    case 'Rei':
+        console.log('Rei -> move uma casa horizontalmente, verticalmente ou diagonalmente');
+        break;
+        
+    default:
+        console.log('Erro: peça inválida');   
+        break;         
+}
+
 
