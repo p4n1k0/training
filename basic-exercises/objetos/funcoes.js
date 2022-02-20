@@ -1,10 +1,12 @@
-function positiveOrNegative(a) {
-   if (a > 0) {
-       console.log(a + ' is positive');
-   } else if (a < 0) {
-       console.log(a + ' is negative');
+function angulosDeTriangulo(x, y, z) {
+   let somaDosAngulos = x + y +z;
+
+   if (x < 0 || y < 0 || z < 0) {
+    console.log('Erro, angulo invalido encontrado');
+   } else if (somaDosAngulos === 180)  {
+       console.log(true);
    } else {
-       console.log(a + ' is zero');
+       console.log(false);  
    }
 }
-positiveOrNegative(0);
+angulosDeTriangulo( 60, 40, -80);
