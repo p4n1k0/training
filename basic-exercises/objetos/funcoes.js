@@ -1,8 +1,8 @@
-function operadoresAritmeticos (a, b) {
-    console.log(a + b);
-    console.log(a - b);
-    console.log(a * b);
-    console.log(a / b);
-    console.log(a % b);
+function biggestNumber (a, b) {
+   if (a > b) {
+       console.log(a + ' é maior que ' + b);
+   } else {
+       console.log(b + ' é maior que ' + a);
+   }
 }
-operadoresAritmeticos(10, 5);
+biggestNumber(10, 40);
