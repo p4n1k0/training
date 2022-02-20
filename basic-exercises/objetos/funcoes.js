@@ -1,10 +1,10 @@
-function biggestNumber (a, b, c) {
-   if (a > b && a > c) {
-       console.log(a + ' é maior que ' + b + ' e ' + c);
-   } else if (b > a && b > c) {
-       console.log(b + ' é maior que ' + a + ' e ' + c);
+function positiveOrNegative(a) {
+   if (a > 0) {
+       console.log(a + ' is positive');
+   } else if (a < 0) {
+       console.log(a + ' is negative');
    } else {
-       console.log(c + ' é maior que ' + a + ' e ' + b);
+       console.log(a + ' is zero');
    }
 }
-biggestNumber(10, 40, 88);
+positiveOrNegative(0);
