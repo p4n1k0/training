@@ -1,10 +1,14 @@
-//8. imprime menor valor dentro da array
+//9. imprime resultdo de cada valor do array divido por 2 
 let numbers = [];
 
-for (let i = 1; i <= 25 ; i += 1) {
+for (let i = 1; i <= 25; i += 1) {
     numbers.push(i);
+    for (let i = 0; i < numbers.length; i += 1) {
+        console.log(numbers[i] / 2);      
+    }
 }
 
-console.log(numbers);
+
+
 
 
