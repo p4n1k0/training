@@ -33,3 +33,19 @@ for (let i = 0; i < array.length; i += 1) {
 }
 console.log(maior);
 console.log(menor);
+
+//acha maior numero primo
+let biggestPrimeNumber = 0;
+
+for (let numbers = 0; numbers <= 50; numbers += 1) {
+    let isPrime = true;
+    for (let numberDivisor = 2; numberDivisor < numbers; numberDivisor += 1) {
+        if (numbers % numberDivisor === 0) {
+            isPrime = false;
+        }
+    }
+    if(isPrime) {
+        biggestPrimeNumber = numbers;
+    }
+}
+console.log(biggestPrimeNumber);
