@@ -1,13 +1,10 @@
-//7. imprime menor valor dentro da array
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let menor = numbers[0];
+//8. imprime menor valor dentro da array
+let numbers = [];
 
-for (let i = 0; i < numbers.length; i += 1) {
-    if(numbers[i] < menor) {
-        menor = numbers[i];
-    }   
+for (let i = 1; i <= 25 ; i += 1) {
+    numbers.push(i);
 }
-console.log(menor)
 
+console.log(numbers);
 
 
