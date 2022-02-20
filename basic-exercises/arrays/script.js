@@ -16,9 +16,15 @@ menu.push('Contato');
 
 console.log(menu);
 
-//FOR
+//FOR usa for para imprimir elementos da array
 let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
 
 for (let i = 0; i < groceryList.length; i += 1) {
     console.log(groceryList[i]);
+}
+
+//FOR OF usa forof para imprimir elementos da array
+let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+for (const iterator of names) {
+    console.log(iterator);
 }
