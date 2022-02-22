@@ -1,5 +1,5 @@
-function subtrai (a, b) {
-    const resto = a - b;
-    return resto;
+function divisao (a, b) {
+    const resultado = a / b;
+    return resultado;
 }
-console.log(subtrai(3, 8));
+console.log(divisao(10, 4));
