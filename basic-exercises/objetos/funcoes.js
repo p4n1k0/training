@@ -1,5 +1,5 @@
-function soma (a, b) {
-    const soma = a + b;
-    return soma;
+function subtrai (a, b) {
+    const resto = a - b;
+    return resto;
 }
-console.log(soma(3, 8));
+console.log(subtrai(3, 8));
