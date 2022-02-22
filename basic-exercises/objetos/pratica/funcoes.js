@@ -25,8 +25,7 @@ let array = [2, 4, 6, 7, 10, 0, -3];
 console.log(retornaIndiceMenorValor(array));
 
 function retornaMaiorNome() {
-  let maiorNome = array[0];
-  
+  let maiorNome = array[0];  
   
   for (let i = 0; i < array.length; i += 1) {
     if (array[i].length > maiorNome.length) {
@@ -38,3 +37,17 @@ function retornaMaiorNome() {
 let array = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
 console.log(retornaMaiorNome(array));
+
+function buscaNumeroRepetido() {
+  let numeroRepetido = 0;
+
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] ===  i) {
+      numeroRepetido = array[i];
+    }    
+  }
+  return numeroRepetido;
+}
+let array = [2, 3, 2, 5, 8, 2, 3];
+
+console.log(buscaNumeroRepetido(array));
