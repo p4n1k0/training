@@ -1,10 +1,10 @@
-function biggestNumber (a, b, c) {
-    if (a > b && a > c) {
-        return a + ' é maior que ' + b + ' e ' + c;
-    } else if (b > c && b > a) {
-        return b + ' é maior que ' + a + ' e ' + c;
+function biggestNumber (a) {
+    if (a > 0) {
+        return 'positive';
+    } else if (a < 0) {
+        return 'negative';
     } else {
-        return c + ' é maior que ' + a + ' e ' + b;
+        return 'zero';
     }
-}
-console.log(biggestNumber(10, 4, 60));
+}    
+console.log(biggestNumber(10));
