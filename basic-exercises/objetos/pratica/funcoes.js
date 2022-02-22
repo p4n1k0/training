@@ -11,6 +11,7 @@ console.log(verificaPalindrome('ovo'));
 function retornaIndiceMenorValor() {
   let menor = array[0];
   let indice = 0;
+  
   for (let i = 1; i < array.length; i++) {
       if (array[i] < menor) {
           menor = array[i];
@@ -22,3 +23,18 @@ function retornaIndiceMenorValor() {
 
 let array = [2, 4, 6, 7, 10, 0, -3]; 
 console.log(retornaIndiceMenorValor(array));
+
+function retornaMaiorNome() {
+  let maiorNome = array[0];
+  
+  
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i].length > maiorNome.length) {
+      maiorNome = array[i];      
+    }
+  }
+  return maiorNome;
+}
+let array = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+console.log(retornaMaiorNome(array));
