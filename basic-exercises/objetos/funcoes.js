@@ -1,5 +1,8 @@
-function divisao (a, b) {
-    const resultado = a / b;
-    return resultado;
+function biggestNumber (a, b) {
+    if (a > b) {
+        return a + ' é maior que ' + b;
+    } else {
+        return b + ' é maior que ' + a;
+    }
 }
-console.log(divisao(10, 4));
+console.log(biggestNumber(10, 4));
