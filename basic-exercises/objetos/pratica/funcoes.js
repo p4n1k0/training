@@ -8,15 +8,17 @@ function verificaPalindrome(string) {
   }
 console.log(verificaPalindrome('ovo'));
   
-function getBiggestIndex(array) {
-  let biggestIndex = 0;
-  
-  for (let i in array) {
-    if (array[biggestIndex] < array[i]) {
-      biggestIndex = i;      
-    }
+function retornaIndiceMaiorValor() {
+  let maior = array[0];
+  let indice = 0;
+  for (let i = 1; i < array.length; i++) {
+      if (array[i] > maior) {
+          maior = array[i];
+          indice = i;
+      }
   }
-  return biggestIndex;
+  return indice;
 }
 
-getBiggestIndex([2, 3, 6, 7, 10, 1]);
+let array = [2, 3, 6, 7, 10, 1];
+console.log(retornaIndiceMaiorValor(array));
