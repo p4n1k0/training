@@ -51,3 +51,15 @@ function buscaNumeroRepetido() {
 let array = [2, 3, 2, 5, 8, 2, 3];
 
 console.log(buscaNumeroRepetido(array));
+
+function fazSomatorio(N) {
+  let somatorio = 1;
+  let contador = 0;
+  
+  for (let i = 0; i < N.length; i += 1) {
+    somatorio = somatorio * N[i];
+    contador = contador + 1;
+  }
+  return somatorio
+}
+console.log(fazSomatorio(5));
